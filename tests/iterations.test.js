@@ -20,4 +20,14 @@ describe('Binary Gap Unit Tests', () => {
     expect(solution(-1000000000000000)).toEqual(3)
     expect(solution(-2000000)).toEqual(4)
   })
+
+  it('should through error when N is not an integer', () => {
+    expect(() => {
+      solution(13.5)
+    }).toThrowError(Error("N must be an integer"))
+
+    expect(() => {
+      solution(-13.5)
+    }).toThrowError(Error("N must be an integer"))
+  });
 })
