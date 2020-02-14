@@ -20,3 +20,5 @@ function solution(N) {
       .map((val) => val.length - 2)
   ) : 0
 }
+
+module.exports = solution;
