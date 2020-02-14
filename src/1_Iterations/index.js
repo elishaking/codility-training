@@ -4,8 +4,8 @@
  * @param {number} N 
  */
 function solution(N) {
-  if (!Number.isInteger(N))
-    throw new Error("N must be an integer")
+  if (!Number.isInteger(N) || N < 0)
+    throw new Error("N must be a positive integer")
 
   const binary = N.toString(2)
 
