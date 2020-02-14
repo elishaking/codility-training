@@ -1,2 +1,2 @@
-# codibility-training
-A compilation of all codibilty lesson solutions
+# codility-training
+A compilation of all codility lesson solutions
