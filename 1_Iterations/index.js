@@ -1,3 +1,8 @@
+/**
+ * Given a positive integer N, Computes the length of its longest binary gap. 
+ * Returns 0 if N doesn't contain a binary gap
+ * @param {number} N 
+ */
 function solution(N) {
   const binary = N.toString(2)
 
