@@ -5,4 +5,9 @@ describe('oddOccurenciesInArray Unit Tests', () => {
     const arr = [1, 2, 3, 1, 4, 2, 4]
     expect(solution(arr)).toEqual(3)
   })
+
+  it('should work with repeating pairs', () => {
+    const arr = [1, 2, 3, 2, 1, 4, 2, 4, 2, 1, 4, 1, 4]
+    expect(solution(arr)).toEqual(3)
+  })
 })
