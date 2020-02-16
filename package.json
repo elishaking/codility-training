@@ -1,0 +1,25 @@
+{
+  "name": "codility-training",
+  "version": "1.0.0",
+  "description": "A compilation of all codility lesson solutions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elishaking/codibility-training.git"
+  },
+  "keywords": [
+    "Codility"
+  ],
+  "author": "King Elisha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elishaking/codibility-training/issues"
+  },
+  "homepage": "https://github.com/elishaking/codibility-training#readme",
+  "devDependencies": {
+    "jest": "25.1.0"
+  }
+}
