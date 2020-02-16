@@ -1,4 +1,4 @@
-const solution = require('../src/1_Iterations')
+const solution = require('../src/iterations/binaryGap')
 
 describe('Binary Gap Unit Tests', () => {
   it('should return correct binary gap for a positive integer', () => {
