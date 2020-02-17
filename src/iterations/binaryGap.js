@@ -4,21 +4,23 @@
  * @param {number} N 
  */
 function solution(N) {
-  const binary = N.toString(2)
+  let binary = N.toString(2).split('')
 
-  let aug = binary
-  do {
-    aug = aug
-      .replace(/010/g, '0110')
-  } while (aug.match(/010/g))
+  // remove trailing zeros
+  for (let i = binary.length - 1; i > 0; i--) {
+    if (binary[i] === '0')
+      binary[i] = '_'
 
+    if (binary[i] === '1')
+      break
+  }
 
-  const gaps = aug.match(/10+1/g)
+  let binaryStr = binary.filter(d => d !== '_').join('')
 
-  return gaps ? Math.max(
-    ...gaps
-      .map((val) => val.length - 2)
-  ) : 0
+  const gapLengths = binaryStr.split("1").map((gap) => gap.length)
+  return Math.max(...gapLengths)
 }
+
+
 
 module.exports = solution;
