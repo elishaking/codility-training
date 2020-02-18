@@ -1,5 +1,6 @@
 /**
- * 
+ * calculates minimal split difference
+ * Detected time complexity: O(N)
  * @param {number[]} A 
  */
 function solution(A) {
