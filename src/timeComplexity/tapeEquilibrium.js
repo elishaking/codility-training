@@ -3,22 +3,25 @@
  * @param {number[]} A 
  */
 function solution(A) {
-  let meanDiff = Number.POSITIVE_INFINITY
+  let sumRight = 0, sumLeft = A[0]
+
+  for (let i = 1; i < A.length; i++)
+    sumRight += A[i]
+
+  let diff = sumLeft - sumRight
+  let meanDiff = Math.abs(diff)
 
   for (let p = 1; p < A.length; p++) {
-    let diff = 0
-    for (let i = 0; i < A.length; i++) {
-      diff = i < p ? diff + A[i] : diff - A[i]
-    }
-    diff = Math.abs(diff)
+    diff += (2 * A[p])
+    let val = Math.abs(diff)
 
-    if (diff < meanDiff)
-      meanDiff = diff
+    if (val < meanDiff)
+      meanDiff = val
   }
 
   return meanDiff
 }
 
 const t0 = Date.now()
-const y = solution(new Array(100000).fill(1000))  // [3,1,2,4,3]
+const y = solution([3, 1, 2])  // [3,1,2,4,3]
 console.log(`val: ${y} time: ${(Date.now() - t0) / 1000}`)
