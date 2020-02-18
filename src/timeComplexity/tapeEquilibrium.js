@@ -22,3 +22,5 @@ function solution(A) {
 
   return meanDiff
 }
+
+module.exports = solution
