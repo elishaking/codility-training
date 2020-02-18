@@ -1,5 +1,6 @@
 /**
- * 
+ * Returns the earliest time to move from pos 0 to position X
+ * Detected time complexity: O(N)
  * @param {number} X 
  * @param {number[]} A 
  */
