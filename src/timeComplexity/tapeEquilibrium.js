@@ -11,7 +11,7 @@ function solution(A) {
   let diff = sumLeft - sumRight
   let meanDiff = Math.abs(diff)
 
-  for (let p = 1; p < A.length; p++) {
+  for (let p = 1; p < A.length - 1; p++) {
     diff += (2 * A[p])
     let val = Math.abs(diff)
 
@@ -21,7 +21,3 @@ function solution(A) {
 
   return meanDiff
 }
-
-const t0 = Date.now()
-const y = solution([3, 1, 2])  // [3,1,2,4,3]
-console.log(`val: ${y} time: ${(Date.now() - t0) / 1000}`)
