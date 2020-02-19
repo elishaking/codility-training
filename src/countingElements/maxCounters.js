@@ -28,3 +28,5 @@ function solution(N, A) {
 
   return counters
 }
+
+module.exports = solution
