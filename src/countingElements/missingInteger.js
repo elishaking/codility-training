@@ -20,3 +20,5 @@ function solution(A) {
 
   return A[A.length - 1] + 1
 }
+
+module.exports = solution
