@@ -1,5 +1,6 @@
 /**
- * 
+ * Returns the smallest positive integer (greater than 0) that does not occur in A
+ * Detected time complexity: O(N) or O(N * log(N))
  * @param {number[]} A 
  */
 function solution(A) {
