@@ -1,6 +1,8 @@
 
 /**
- * 
+ * Given an integer N and a non-empty array A consisting of M 
+ * integers, returns a sequence of integers representing the values of the counters
+ * **Detected time complexity: O(N + M)**
  * @param {number} N 
  * @param {number[]} A 
  */
