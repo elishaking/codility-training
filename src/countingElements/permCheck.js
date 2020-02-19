@@ -1,5 +1,6 @@
 /**
- * 
+ * Returns 1 if array A is a permutation and 0 if it is not
+ * Detected time complexity: O(N) or O(N * log(N))
  * @param {number[]} A 
  */
 function solution(A) {
