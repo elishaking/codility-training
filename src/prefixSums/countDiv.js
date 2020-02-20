@@ -1,5 +1,6 @@
 /**
- * 
+ * Computes number of integers divisible by k in range [a..b].
+ * Detected time complexity: O(1)
  * @param {number} A 
  * @param {number} B 
  * @param {number} K 
