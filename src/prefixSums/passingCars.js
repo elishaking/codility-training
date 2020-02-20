@@ -1,6 +1,7 @@
 
 /**
- * 
+ * Given a non-empty array A of N integers, returns the number of pairs of passing cars
+ * Detected time complexity: O(N)
  * @param {number[]} A 
  */
 function solution(A) {
