@@ -9,3 +9,5 @@ function solution(A, B, K) {
 
   return val + ((A % K === 0) ? 1 : 0)
 }
+
+module.exports = solution
