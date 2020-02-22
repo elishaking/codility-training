@@ -33,4 +33,4 @@ function solution(S, P, Q) {
   return M;
 }
 
-console.log(solution("CAGCCTA", [2, 5, 0], [4, 5, 6]));
+module.exports = solution;
