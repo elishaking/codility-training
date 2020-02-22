@@ -34,4 +34,4 @@ function solution(A) {
   return minIdx;
 }
 
-console.log(solution([4, 2, 2, 5, 1, 5, 8]));
+module.exports = solution;
