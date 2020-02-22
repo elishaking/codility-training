@@ -1,5 +1,6 @@
 /**
- *
+ * Calculate minimum average
+ * Detected time complexity: O(N)
  * @param {number[]} A
  */
 function solution(A) {
