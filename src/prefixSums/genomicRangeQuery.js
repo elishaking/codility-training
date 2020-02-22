@@ -1,5 +1,6 @@
 /**
- *
+ * Computes minimum in a given range
+ * Detected time complexity: O(N + M)
  * @param {string} S
  * @param {number[]} P
  * @param {number[]} Q
