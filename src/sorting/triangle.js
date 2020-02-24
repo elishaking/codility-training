@@ -1,5 +1,8 @@
 /**
- *
+ * Given an array A consisting of N integers, returns 1 if
+ * there exists a triangular triplet for this array and
+ * returns 0 otherwise
+ * Detected time complexity: O(N*log(N))
  * @param {number[]} A
  */
 function solution(A) {
