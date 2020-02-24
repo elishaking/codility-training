@@ -1,5 +1,6 @@
 /**
- *
+ * Returns maximum triplet product
+ * Detected time complexity: O(N * log(N))
  * @param {number[]} A
  */
 function solution(A) {
