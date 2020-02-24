@@ -13,3 +13,5 @@ function solution(A) {
 
   return count.size;
 }
+
+module.exports = solution;
