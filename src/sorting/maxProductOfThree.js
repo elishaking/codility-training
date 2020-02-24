@@ -25,3 +25,5 @@ function solution(A) {
 
   return P * Q * R;
 }
+
+module.exports = solution;
