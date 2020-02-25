@@ -1,5 +1,10 @@
 /**
+ * Given an array A describing N discs, returns the number of
+ * (unordered pairs of intersecting discs.
  *
+ * Returns −1 if the number of intersecting pairs exceeds 10,000,000
+ *
+ * Detected time complexity: O(N*log(N)) or O(N)
  * @param {number[]} A
  */
 function solution(A) {
