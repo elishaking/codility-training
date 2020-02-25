@@ -35,8 +35,4 @@ function solution(A) {
   return intersections;
 }
 
-const x = new Array(100000).fill(0); //.map((_, i) => i);
-
-const t0 = Date.now();
-const y = solution(x); //[1, 5, 2, 1, 4, 0]
-console.log(`val: ${y} time: ${(Date.now() - t0) / 1000}`);
+module.exports = solution;
