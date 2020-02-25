@@ -1,5 +1,8 @@
 /**
+ * Given a string S consisting of N characters, returns 1 if string S is
+ * properly nested and 0 otherwise
  *
+ * Detected time complexity: O(N)
  * @param {string} S
  */
 function solution(S) {
