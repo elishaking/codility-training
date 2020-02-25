@@ -18,7 +18,4 @@ function solution(S) {
   return open === 0 ? 1 : 0;
 }
 
-const x =
-  new Array(10001).fill("(").join("") + new Array(10000).fill(")").join("");
-
-console.log(solution(x)); // "(()(())())" ")("
+module.exports = solution;
