@@ -1,5 +1,8 @@
 /**
+ * Given a string S consisting of N characters, returns 1 if S is
+ * properly nested and 0 otherwise
  *
+ * Detected time complexity: O(N)
  * @param {string} S
  */
 function solution(S) {
@@ -19,4 +22,4 @@ function solution(S) {
   return closingCharStack.length === 0 ? 1 : 0;
 }
 
-console.log(solution("{{{{")); // "([)()]" "" "{[()()]}"
+module.exports = solution;
