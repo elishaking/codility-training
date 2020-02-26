@@ -1,5 +1,8 @@
 /**
+ * Given two non-empty arrays A and B consisting of N integers,
+ * returns the number of fish that will stay alive
  *
+ * Detected time complexity: O(N)
  * @param {number[]} A
  * @param {number[]} B
  */
