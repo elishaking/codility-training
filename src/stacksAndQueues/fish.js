@@ -4,34 +4,51 @@
  * @param {number[]} B
  */
 function solution(A, B) {
-  let eaten = 0;
-  for (let i = 0; i < A.length - 1; i++) {
-    if (B[i] - B[i + 1] > 0) {
-      if (A[i] !== -1 && A[i + 1] !== -1) {
-        eaten++;
-        if (A[i] > A[i + 1]) A[i + 1] = -1;
-        else A[i] = -1;
-      }
+  const UPSTREAM = 0;
 
-      [A[i], A[i + 1]] = [A[i + 1], A[i]];
-      [B[i], B[i + 1]] = [B[i + 1], B[i]];
+  const fishStack = [];
+  fishStack.push({
+    size: A[0],
+    direction: B[0]
+  });
+
+  for (let i = 1; i < A.length; i++) {
+    if (B[i] === fishStack[fishStack.length - 1].direction) {
+      fishStack.push({
+        size: A[i],
+        direction: B[i]
+      });
+    } else if (fishStack[fishStack.length - 1].direction === UPSTREAM) {
+      fishStack.push({
+        size: A[i],
+        direction: B[i]
+      });
+    } else {
+      while (fishStack.length !== 0) {
+        if (fishStack[fishStack.length - 1].direction === B[i]) {
+          fishStack.push({
+            size: A[i],
+            direction: B[i]
+          });
+          break;
+        } else {
+          if (fishStack[fishStack.length - 1].size > A[i]) {
+            break;
+          } else {
+            fishStack.pop();
+            continue;
+          }
+        }
+      }
+      if (fishStack.length === 0) {
+        fishStack.push({
+          size: A[i],
+          direction: B[i]
+        });
+      }
     }
   }
-
-  for (let i = A.length - 1; i > 0; i--) {
-    if (B[i] - B[i - 1] < 0) {
-      if (A[i] !== -1 && A[i - 1] !== -1) {
-        eaten++;
-        if (A[i] > A[i - 1]) A[i - 1] = -1;
-        else A[i] = -1;
-      }
-
-      [A[i], A[i - 1]] = [A[i - 1], A[i]];
-      [B[i], B[i - 1]] = [B[i - 1], B[i]];
-    }
-  }
-
-  return A.length - eaten;
+  return fishStack.length;
 }
 
 console.log(solution([5, 3, 2, 1, 4], [0, 1, 0, 1, 0])); // [4, 3, 2, 1, 5], [0, 1, 0, 0, 0]
