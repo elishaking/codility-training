@@ -54,4 +54,4 @@ function solution(A, B) {
   return fishStack.length;
 }
 
-console.log(solution([5, 3, 2, 1, 4], [0, 1, 0, 1, 0])); // [4, 3, 2, 1, 5], [0, 1, 0, 0, 0]
+module.exports = solution;
