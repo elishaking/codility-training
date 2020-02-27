@@ -1,5 +1,8 @@
 /**
+ * Given an array H of N positive integers specifying the height of a wall, returns
+ * the minimum number of blocks needed to build it.
  *
+ * Detected time complexity: O(N)
  * @param {number[]} H
  */
 function solution(H) {
