@@ -31,4 +31,4 @@ function solution(A) {
   return maxCount > A.length / 2 ? B.indexOf(item) : -1;
 }
 
-console.log(solution([2, 1, 1, 1, 3])); //[1, 2, 5, 3, 5, 3, 3, 3, 3] [3, 4, 3, 2, 3, -1, 3, 3]
+module.exports = solution;
