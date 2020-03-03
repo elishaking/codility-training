@@ -1,5 +1,8 @@
 /**
+ * Given an array A consisting of N integers, returns the maximum
+ * sum of any slice of A
  *
+ * Detected time complexity: O(N)
  * @param {number[]} A
  */
 function solution(A) {
