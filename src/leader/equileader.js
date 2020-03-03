@@ -49,4 +49,4 @@ function solution(A) {
   return nEquiLeaders;
 }
 
-console.log(solution([4, 3, 4, 4, 4, 2]));
+module.exports = solution;
