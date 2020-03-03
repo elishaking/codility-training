@@ -17,4 +17,4 @@ function solution(A) {
   return maxSlice;
 }
 
-console.log(solution([3, 2, -6, 4, 0]));
+module.exports = solution;
