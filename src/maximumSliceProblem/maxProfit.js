@@ -18,4 +18,5 @@ function solution(A) {
   return maxProfit;
 }
 
-console.log(solution([23171, 21011, 21123, 21366, 21013, 21367]));
+console.log(solution([23171, 21011, 21123, 21366, 1000000]));
+module.exports = solution;
