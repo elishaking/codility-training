@@ -1,5 +1,9 @@
 /**
+ * Given an array A consisting of N integers containing daily prices of a
+ * stock share for a period of N consecutive days, returns the maximum possible
+ * profit from one transaction during this period
  *
+ * Detected time complexity: O(N)
  * @param {number[]} A
  */
 function solution(A) {
