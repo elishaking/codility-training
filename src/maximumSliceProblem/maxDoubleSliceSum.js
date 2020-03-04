@@ -30,5 +30,6 @@ function solution(A) {
   return maxSum;
 }
 
-const y = [3, 2, 6, -1, 4, 5, -1, 2];
+const y = [3, 2, 6, -1, 100, 10, 100, 2];
 console.log(solution(y));
+module.exports = solution;
