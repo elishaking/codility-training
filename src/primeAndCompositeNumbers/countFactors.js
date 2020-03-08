@@ -1,5 +1,7 @@
 /**
+ * Given a positive integer N, returns the number of its factors
  *
+ * Detected time complexity: O(sqrt(N))
  * @param {number} N
  */
 function solution(N) {
