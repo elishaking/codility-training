@@ -17,4 +17,4 @@ function solution(N) {
   return nFactors;
 }
 
-console.log(solution(24));
+module.exports = solution;
