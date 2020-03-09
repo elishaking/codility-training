@@ -7,7 +7,7 @@
  * equal to K. The distance between indices P and Q is the absolute value  P − Q|
  *
  * Given a non-empty array A of N integers, returns the maximum number
- * of flags that can be set on thepeaks of the array.
+ * of flags that can be set on the peaks of the array.
  *
  * Detected time complexity: O(N)
  * @param {number[]} A
@@ -50,4 +50,4 @@ function solution(A) {
   return nFlags;
 }
 
-console.log(solution([1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]));
+module.exports = solution;
