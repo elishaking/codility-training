@@ -1,5 +1,15 @@
 /**
+ * A peak is an array element which is larger than its neighbours.
+ * More precisely, it is an index P such that 0 < P < N − 1 and A[P − 1] < A[P] > A[P + 1].
  *
+ * Flags can only be set on peaks. What's more, if you take K flags,
+ * then the distance between any two flags should be greater than or
+ * equal to K. The distance between indices P and Q is the absolute value  P − Q|
+ *
+ * Given a non-empty array A of N integers, returns the maximum number
+ * of flags that can be set on thepeaks of the array.
+ *
+ * Detected time complexity: O(N)
  * @param {number[]} A
  */
 function solution(A) {
