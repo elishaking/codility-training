@@ -17,4 +17,4 @@ function solution(N) {
   return minPerimeter;
 }
 
-console.log(solution(100000000));
+module.exports = solution;
