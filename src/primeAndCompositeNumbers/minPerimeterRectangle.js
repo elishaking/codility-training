@@ -1,5 +1,8 @@
 /**
+ * Given an integer N, returns the minimal perimeter of any rectangle
+ * whose area is exactly equal to N
  *
+ * Detected time complexity: O(sqrt(N))
  * @param {number} N
  */
 function solution(N) {
