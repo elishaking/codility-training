@@ -10,7 +10,7 @@
 # Checklist
 - [ ] Implemented correct solution
 - [ ] Tests
-- [ ] Proper documention
+- [ ] Proper documentation
 
 # Additional Information
 - any relevant information or context associated with this PR | or **None**
