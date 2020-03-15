@@ -45,7 +45,4 @@ function solution(A) {
   return 0;
 }
 
-// console.log(solution([1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]));
-console.log(solution([1, 3, 4, 3, 4, 1, 2, 1]));
-
 module.exports = solution;
