@@ -46,4 +46,6 @@ function solution(A) {
 }
 
 // console.log(solution([1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2]));
-console.log(solution([1, 3, 2, 1]));
+console.log(solution([1, 3, 4, 3, 4, 1, 2, 1]));
+
+module.exports = solution;
