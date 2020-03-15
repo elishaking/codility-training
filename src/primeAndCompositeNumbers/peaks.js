@@ -1,5 +1,17 @@
 /**
+ * A peak is an array element which is larger than
+ * its neighbors. More precisely, it is an index P such
+ * that 0 < P < N − 1,  A[P − 1] < A[P] and A[P] > A[P + 1]
  *
+ * Given a non-empty array A consisting of N integers, returns the
+ * maximum number of blocks into which A can be divided where each
+ * block has exactly one peak
+ *
+ * Notice that extreme elements of the blocks (for example A[K − 1] or A[K])
+ * can also be peaks, but only if they have both neighbors
+ * (including one in an adjacent blocks)
+ *
+ * Detected time complexity:O(N * log(log(N)))
  * @param {number[]} A
  */
 function solution(A) {
