@@ -26,4 +26,6 @@ function solution(A) {
   return nonDivisible;
 }
 
-console.log(solution([3, 1, 2, 3, 6]));
+console.log(solution([3, 5, 3]));
+
+module.exports = solution;
