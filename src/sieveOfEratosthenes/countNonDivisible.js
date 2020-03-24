@@ -1,5 +1,8 @@
 /**
+ * Given an array A consisting of N integers, returns a sequence
+ * of integers representing the amount of non-divisors
  *
+ * Detected time complexity: O(N * log(N))
  * @param {number[]} A
  */
 function solution(A) {
@@ -25,7 +28,5 @@ function solution(A) {
   }
   return nonDivisible;
 }
-
-console.log(solution([3, 5, 3]));
 
 module.exports = solution;
