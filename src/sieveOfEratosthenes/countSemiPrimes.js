@@ -49,4 +49,6 @@ function solution(N, P, Q) {
   return semiPrimesCount;
 }
 
-console.log(solution(26, [1, 4, 16], [26, 10, 20]));
+console.log(solution(50, [3, 17, 16], [15, 41, 32]));
+
+module.exports = solution;
