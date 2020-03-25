@@ -1,8 +1,13 @@
 /**
+ * Given an integer N and two non-empty arrays P and Q consisting of M
+ * integers, returns an array consisting of M elements specifying the
+ * consecutive number of semi-primes in the range (P[i], Q[i])
  *
  * @param {number} N
  * @param {number[]} P
  * @param {number[]} Q
+ *
+ * Detected time complexity: O(N * log(log(N)) + M)
  */
 function solution(N, P, Q) {
   const primeNumbersSieve = new Array(N + 1).fill(true);
@@ -48,7 +53,5 @@ function solution(N, P, Q) {
 
   return semiPrimesCount;
 }
-
-console.log(solution(50, [3, 17, 16], [15, 41, 32]));
 
 module.exports = solution;
