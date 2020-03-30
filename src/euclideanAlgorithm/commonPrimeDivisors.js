@@ -52,4 +52,5 @@ function solution(A, B) {
   return KPositions;
 }
 
-console.log(solution([15, 75], [75, 15]));
+console.log(solution([30, 50], [50, 30]));
+module.exports = solution;
