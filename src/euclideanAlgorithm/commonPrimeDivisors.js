@@ -1,4 +1,8 @@
 /**
+ * Given two non-empty arrays A and B of Z integers, returns the number of positions
+ * K for which the prime divisors of A[K] and B[K] are exactly the same
+ *
+ * Detected time complexity: O(Z * log(max(A) + max(B))**2)
  *
  * @param {number[]} A
  * @param {number[]} B
@@ -52,5 +56,4 @@ function solution(A, B) {
   return KPositions;
 }
 
-console.log(solution([30, 50], [50, 30]));
 module.exports = solution;
