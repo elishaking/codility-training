@@ -13,4 +13,6 @@ function solution(N, M) {
   return N / gcd(N, M);
 }
 
-console.log(solution(10, 7));
+console.log(solution(100, 10));
+
+module.exports = solution;
