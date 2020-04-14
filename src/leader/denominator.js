@@ -31,4 +31,22 @@ function solution(A) {
   return maxCount > A.length / 2 ? B.indexOf(item) : -1;
 }
 
+/**
+ * Time complexity: O(N)
+ * @param {number[]} A
+ */
+function solution2(A) {
+  const S = {};
+  let max = [0, 0];
+
+  for (let i = 0; i < A.length; i++) {
+    S[A[i]] = S[A[i]] === undefined ? 1 : S[A[i]] + 1;
+    if (S[A[i]] > max[0]) max = [S[A[i]], i];
+  }
+
+  if (max[0] > A.length / 2) return max[1];
+
+  return -1;
+}
+
 module.exports = solution;
