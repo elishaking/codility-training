@@ -1,18 +1,17 @@
 /**
  * Rotates array A, K times
- * @param {number[]} A 
- * @param {number} K 
+ * @param {number[]} A
+ * @param {number} K
  */
 function solution(A, K) {
-  if (A.length === 0)
-    return A
+  if (A.length === 0) return A;
 
   for (let i = 0; i < K; i++) {
-    const val = A.pop()
-    A.unshift(val)
+    const val = A.pop();
+    A.unshift(val);
   }
 
-  return A
+  return A;
 }
 
-module.exports = solution
+module.exports = solution;
